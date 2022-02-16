@@ -1,0 +1,46 @@
+@charset "UTF-8";
+//主体高度
+$content: 1200px;
+//定义浏览器内核
+@mixin webkit($type,$value){
+    -webkit-#{$type}: $value;
+    -moz-#{$type}: $value;
+    -ms-#{$type}: $value;
+    -o-#{$type}: $value;
+    #{$type}: $value;
+}
+
+
+//clearfix清浮动
+%clearfix {
+    // display: inline-block;
+    height: 1%;
+    &:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+}
+//自动分列定义内缩部分
+
+@mixin gutter($value){
+    &.gutter {
+        div[class^=clo-item] {padding: 0 $value;};
+        .item-wrap { margin: 0 -#{$value};}
+      }
+}
+
+//超出部分以省略号代替
+@mixin ell($value) {
+    display: -moz-box;
+    display: -webkit-box;
+    -webkit-line-clamp: $value;
+    -moz-line-clamp: $value;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    overflow: hidden;
+    display: box;
+    box-orient: vertical;
+}
