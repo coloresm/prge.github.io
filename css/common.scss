@@ -4,9 +4,10 @@ html {
     font-size: 10px;
 }
 .header {
-    width: 100%;
+    max-width: 79rem;
+    min-width: 38rem;
     height: 50.8rem;
-    background: #0066cc url(../img/bj.jpg) no-repeat center;
+    background-image: url(/img/bj.jpg);
     margin: auto;
     border-radius: 0 0 30% 30%;
 }
