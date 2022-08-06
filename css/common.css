@@ -23,7 +23,7 @@
 }
 .nav li {
     float: left;
-
+    padding: 0 30px;
 }
 .nav li a {
     font-size: 15px;
