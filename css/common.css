@@ -30,6 +30,8 @@
     color: black;
 }
 #h-right {
+    display: flex;
+    align-items: center;
     font-size: 12px;
     margin-left: auto;
 }
@@ -39,6 +41,7 @@
 .header-account {
     display: flex;
     align-items: center;
+    margin-left: 23px;
 }
 .header-account i {
     height: 11px;
