@@ -70,8 +70,13 @@
 }
 .header-search form button {
     width: 30px;
-    background: no-repeat center url(../images/search-button.png);
+    background: url(../images/search-button.png) no-repeat center ;
 }
 .header-search form select {
-    margin-left: 16px;
+    width: 46px;
+    margin: 0 10px;
+}
+.header-search form input {
+    width: 112px;
+    color: #cdc7c7;
 }
