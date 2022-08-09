@@ -48,3 +48,30 @@
     border-right: 1px solid #d8d8d7;
     margin: 0 10px;
 }
+.header-search {
+    width: 208px;
+    height: 30px;
+    background-color: #efefef;
+    border-radius: 15px;
+}
+.header-search form {
+    display: flex;
+    align-items: center;
+}
+.header-search form ,.header-search form select,.header-search form input,.header-search form select,.header-search form button{
+    height: inherit;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    outline: none;
+}
+.header-search form button , .header-search form select, .header-search form select option {
+    cursor: pointer;
+}
+.header-search form button {
+    width: 30px;
+    background: no-repeat center url(../images/search-button.png);
+}
+.header-search form select {
+    margin-left: 16px;
+}
