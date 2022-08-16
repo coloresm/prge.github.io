@@ -13,8 +13,15 @@
         .logo a {
             background: url(../images/logo-white-transparent.png) no-repeat center;
         }
-        .nav a{
-            color: white;
+        .nav > li {
+            > ul::before {
+                border-bottom: 10px solid white;
+            }
+            a { color: white;}
+            ul {
+                background-color: white;
+                a { color: black;}
+            }
         }
         .header-account {
             a { color: white;}
@@ -45,11 +52,27 @@
 .nav {
     > li {
         float: left;
-        padding: 0 30px;
+        padding: 20px 30px;
         > a {
             font-size: 15px;
             color: black;
-        }  
+        }
+        > ul {
+            top: 100%;
+        }
+        > ul::before {
+            content: "";
+            display: block;
+            position:absolute;
+            top: -10px;
+            left: 50%;
+            width: 0;
+            height: 0;
+            margin-left: -10px;
+            border-bottom: 10px solid #efefef;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+        }
     }
     li:hover > ul { display: block;}
     li { position: relative;}

@@ -12,8 +12,14 @@
     border-bottom: none; }
     #header.transparent .logo a {
       background: url(../images/logo-white-transparent.png) no-repeat center; }
-    #header.transparent .nav a {
+    #header.transparent .nav > li > ul::before {
+      border-bottom: 10px solid white; }
+    #header.transparent .nav > li a {
       color: white; }
+    #header.transparent .nav > li ul {
+      background-color: white; }
+      #header.transparent .nav > li ul a {
+        color: black; }
     #header.transparent .header-account a {
       color: white; }
     #header.transparent .header-account i {
@@ -42,10 +48,24 @@
 /*下拉菜单*/
 .nav > li {
   float: left;
-  padding: 0 30px; }
+  padding: 20px 30px; }
   .nav > li > a {
     font-size: 15px;
     color: black; }
+  .nav > li > ul {
+    top: 100%; }
+  .nav > li > ul::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -10px;
+    border-bottom: 10px solid #efefef;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent; }
 .nav li:hover > ul {
   display: block; }
 .nav li {
