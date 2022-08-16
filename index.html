@@ -11,15 +11,42 @@
     <title>原生HTML5+CSS3原生响应式布局</title>
 </head>
 <body>
-    <header id="header" class="fixed transparent">
+    <!-- <header id="header" class="fixed transparent"> -->
+    <header id="header">
         <div class="container header-wrapper">
             <h1 class="logo">
                 <a href="./index.html"></a>
             </h1>
             <nav>
-                <ul class="nav">
+                <ul class="nav clearfix">
                     <li><a href="">首页</a></li>
-                    <li><a href="">热门目的地</a></li>
+                    <li>
+                        <a href="">热门目的地</a>
+                        <ul>
+                            <!--子菜单-->
+                            <li><a href="">亚洲</a></li>
+                            <li><a href="">欧洲</a></li>
+                            <li>
+                                <a href="">北美洲</a>
+                                <ul>
+                                    <!--二级菜单-->
+                                    <li><a href="">北美洲-1</a></li>
+                                    <li><a href="">北美洲-2</a></li>
+                                    <li>
+                                        <a href="">北美洲-3</a>
+                                        <ul>
+                                            <!--三级菜单-->
+                                            <li><a href="">北美洲-A</a></li>
+                                            <li><a href="">北美洲-B</a></li>
+                                            <li><a href="">北美洲-C</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="">非洲</a></li>
+                            <li><a href="">大洋洲</a></li>
+                        </ul>
+                    </li>
                     <li><a href="">找地接社</a></li>
                     <li><a href="">联盟大事件</a></li>
                     <li><a href="">联系我们</a></li>
