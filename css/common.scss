@@ -19,6 +19,7 @@
             }
             a { color: white;}
             ul {
+                opacity: .5;
                 background-color: white;
                 a { color: black;}
             }
@@ -52,7 +53,7 @@
 .nav {
     > li {
         float: left;
-        padding: 20px 30px;
+        padding: 0 30px;
         > a {
             font-size: 15px;
             color: black;
@@ -74,6 +75,7 @@
             border-right: 10px solid transparent;
         }
     }
+    > li { padding-bottom: 10px;}
     li:hover > ul { display: block;}
     li { position: relative;}
     ul { 
