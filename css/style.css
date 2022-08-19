@@ -30,8 +30,7 @@
     width: 5760px;
     margin: auto; }
     #banner-wrapper .banner-slide-warp .item {
-      float: left;
-      margin: auto; }
+      float: left; }
 
 #header {
   z-index: 1; }
