@@ -8,6 +8,7 @@
     <meta name="keywords" content="原生HTML5+CSS3原生响应式布局">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>原生HTML5+CSS3原生响应式布局</title>
 </head>
 <body>
@@ -72,11 +73,28 @@
             </div>
         </div>
     </header>
-    <div>
-        <img src="./images/banner.jpg" alt="背景图片" width="100%">
-    </div>
-    <div>
-        <img src="./images/banner.jpg" alt="背景图片" width="100%">
+    <div id="banner-wrapper">
+        <div class="banner-list">
+            <div class="banner-slide-warp clearfix">
+                <div class="item">
+                    <img src="./images/banner.jpg" alt="" width="100%">
+                </div>
+                <div class="item">
+                    <img src="./images/banner.jpg" alt="" width="100%">
+                </div>
+                <div class="item">
+                    <img src="./images/banner.jpg" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+        <div class="banner-tab">
+            <ul>
+                <li>巴黎圆-A</li>
+                <li>巴黎圆-B</li>
+                <li>巴黎圆-C</li>
+                <li>巴黎圆-D</li>
+            </ul>
+        </div>
     </div>
     <div class="container"></div>
     <footer id="footer"></footer>

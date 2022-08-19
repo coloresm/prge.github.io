@@ -18,6 +18,8 @@
       color: white; }
     #header.transparent .nav > li ul {
       opacity: .8;
+      filter: alpha(opacity=80);
+      /*兼容IE*/
       background-color: white; }
       #header.transparent .nav > li ul a {
         color: black; }
