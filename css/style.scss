@@ -1,28 +1,56 @@
 /*轮播*/
 #banner-wrapper {
     position: relative;
+    /*方法二弹性布局*/
     .banner-tab {
         position: absolute;
-        left: 0;
         right: 0;
+        left: 0;
         bottom: 0;
-        font-size: 0;
-        text-align: center;
-        li {
-            display: inline-block;
-            width: 190px;
-            height: 50px;
-            background-color: rgba(0,0,0,.5);
-            text-align: center;
-            line-height: 50px;
-            color: #a4a4a4;
-            font-size: 14px;
-            margin: 0 1px;
-            cursor: pointer;
-        } 
-        li:first-child { border-top-left-radius: 12px;}
-        li:last-child { border-top-right-radius: 12px;}
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            li {
+                width: 190px;
+                height: 50px;
+                line-height: 50px;
+                background-color: rgba(0,0,0, .5);
+                color: #a4a4a4;
+                text-align: center;
+                font-size: 14px;
+                margin: 0 1px;
+                cursor: pointer;
+                &:hover { background-color: rgba(16,0,255, .5);}
+                &:first-child { border-top-left-radius: 12px;}
+                &:last-child { border-top-right-radius: 12px;}
+            }
+
+        }
     }
+    /*方法一常规*/
+    // .banner-tab {
+    //     position: absolute;
+    //     left: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     font-size: 0;
+    //     text-align: center;
+    //     li {
+    //         display: inline-block;
+    //         width: 190px;
+    //         height: 50px;
+    //         background-color: rgba(0,0,0,.5);
+    //         text-align: center;
+    //         line-height: 50px;
+    //         color: #a4a4a4;
+    //         font-size: 14px;
+    //         margin: 0 1px;
+    //         cursor: pointer;
+    //     } 
+    //     li:first-child { border-top-left-radius: 12px;}
+    //     li:last-child { border-top-right-radius: 12px;}
+    // }
     .banner-list {
         overflow: hidden;
     }
