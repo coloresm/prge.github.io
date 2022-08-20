@@ -1,7 +1,7 @@
 /*轮播*/
 #banner-wrapper {
     position: relative;
-    /*方法二弹性布局*/
+    /*方法二弹性布局底部TAB*/
     .banner-tab {
         position: absolute;
         right: 0;
@@ -21,7 +21,7 @@
                 font-size: 14px;
                 margin: 0 1px;
                 cursor: pointer;
-                &:hover { background-color: rgba(16,0,255, .5);}
+                &:hover { background-color: rgba(24,81,251, .8);}
                 &:first-child { border-top-left-radius: 12px;}
                 &:last-child { border-top-right-radius: 12px;}
             }
@@ -59,6 +59,37 @@
         margin: auto;
         .item {
             float: left;
+            position: relative;
+        }
+    }
+    .text-content {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 135px;
+        text-align: center;
+        color: white;
+        h2 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 18px;
+        }
+        h3 {
+            font-size: 24px;
+        }
+        p {
+            line-height: 24px;
+            font-size: 14px;
+        }
+        h3,p {
+            font-weight: lighter;
+        }
+        hr { 
+            border: none;
+            width: 50px;
+            height: 1px;
+            background-color: white;
+            margin: 35px auto;
         }
     }
 }

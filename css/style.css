@@ -2,7 +2,7 @@
 /*轮播*/
 #banner-wrapper {
   position: relative;
-  /*方法二弹性布局*/
+  /*方法二弹性布局底部TAB*/
   /*方法一常规*/ }
   #banner-wrapper .banner-tab {
     position: absolute;
@@ -24,7 +24,7 @@
         margin: 0 1px;
         cursor: pointer; }
         #banner-wrapper .banner-tab ul li:hover {
-          background-color: rgba(16, 0, 255, 0.5); }
+          background-color: rgba(24, 81, 251, 0.8); }
         #banner-wrapper .banner-tab ul li:first-child {
           border-top-left-radius: 12px; }
         #banner-wrapper .banner-tab ul li:last-child {
@@ -35,7 +35,32 @@
     width: 5760px;
     margin: auto; }
     #banner-wrapper .banner-slide-warp .item {
-      float: left; }
+      float: left;
+      position: relative; }
+  #banner-wrapper .text-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 135px;
+    text-align: center;
+    color: white; }
+    #banner-wrapper .text-content h2 {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 18px; }
+    #banner-wrapper .text-content h3 {
+      font-size: 24px; }
+    #banner-wrapper .text-content p {
+      line-height: 24px;
+      font-size: 14px; }
+    #banner-wrapper .text-content h3, #banner-wrapper .text-content p {
+      font-weight: lighter; }
+    #banner-wrapper .text-content hr {
+      border: none;
+      width: 50px;
+      height: 1px;
+      background-color: white;
+      margin: 35px auto; }
 
 #header {
   z-index: 1; }
