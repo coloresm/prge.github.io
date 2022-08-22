@@ -66,14 +66,14 @@
   z-index: 1; }
 
 /*热门国家目的地*/
-.item-wrap {
+#hot-nation .item-wrap {
   padding: 0 5px; }
-  .item-wrap .item-padding {
+  #hot-nation .item-wrap .item-padding {
     float: left;
     width: 25%;
     padding: 5px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
-  .item-wrap .item-img {
+  #hot-nation .item-wrap .item-img {
     border-radius: 15px;
     background: no-repeat center; }
