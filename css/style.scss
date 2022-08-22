@@ -1,33 +1,46 @@
 /*轮播*/
 #banner-wrapper {
     position: relative;
+
     /*方法二弹性布局底部TAB*/
     .banner-tab {
         position: absolute;
         right: 0;
         left: 0;
         bottom: 0;
+
         ul {
             display: flex;
             align-items: center;
             justify-content: center;
+
             li {
                 width: 190px;
                 height: 50px;
                 line-height: 50px;
-                background-color: rgba(0,0,0, .5);
+                background-color: rgba(0, 0, 0, .5);
                 color: #a4a4a4;
                 text-align: center;
                 font-size: 14px;
                 margin: 0 1px;
                 cursor: pointer;
-                &:hover { background-color: rgba(24,81,251, .8);}
-                &:first-child { border-top-left-radius: 12px;}
-                &:last-child { border-top-right-radius: 12px;}
+
+                &:hover {
+                    background-color: rgba(24, 81, 251, .8);
+                }
+
+                &:first-child {
+                    border-top-left-radius: 12px;
+                }
+
+                &:last-child {
+                    border-top-right-radius: 12px;
+                }
             }
 
         }
     }
+
     /*方法一常规*/
     // .banner-tab {
     //     position: absolute;
@@ -54,14 +67,17 @@
     .banner-list {
         overflow: hidden;
     }
+
     .banner-slide-warp {
         width: 5760px;
         margin: auto;
+
         .item {
             float: left;
             position: relative;
         }
     }
+
     .text-content {
         position: absolute;
         left: 0;
@@ -69,22 +85,28 @@
         bottom: 135px;
         text-align: center;
         color: white;
+
         h2 {
             font-size: 48px;
             font-weight: bold;
             margin-bottom: 18px;
         }
+
         h3 {
             font-size: 24px;
         }
+
         p {
             line-height: 24px;
             font-size: 14px;
         }
-        h3,p {
+
+        h3,
+        p {
             font-weight: lighter;
         }
-        hr { 
+
+        hr {
             border: none;
             width: 50px;
             height: 1px;
@@ -93,6 +115,7 @@
         }
     }
 }
+
 #header {
     z-index: 1;
 }
@@ -102,6 +125,7 @@
 #hot-nation {
     .item-wrap {
         padding: 0 5px;
+
         .item-padding {
             float: left;
             // width: 25%;
@@ -109,6 +133,7 @@
             -webkit-box-sizing: border-box;
             box-sizing: border-box;
         }
+
         .item-img {
             border-radius: 15px;
             background: no-repeat center;
@@ -116,15 +141,27 @@
         }
     }
 }
-@media screen and( min-width: 960px) {
-    .item-padding { width: 25%;}
+
+@media screen and(min-width: 960px) {
+    .item-padding {
+        width: 25%;
+    }
 }
-@media screen and( max-width: 960px) {
-    .item-padding { width: 33.33333%;}
+
+@media screen and(max-width: 960px) {
+    .item-padding {
+        width: 33.33333%;
+    }
 }
-@media screen and( max-width: 747px) {
-    .item-padding { width: 50%;}
+
+@media screen and(max-width: 747px) {
+    .item-padding {
+        width: 50%;
+    }
 }
-@media screen and( max-width: 369px) {
-    .item-padding { width: 100%;}
+
+@media screen and(max-width: 375px) {
+    .item-padding {
+        width: 100%;
+    }
 }

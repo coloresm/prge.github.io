@@ -53,7 +53,8 @@
     #banner-wrapper .text-content p {
       line-height: 24px;
       font-size: 14px; }
-    #banner-wrapper .text-content h3, #banner-wrapper .text-content p {
+    #banner-wrapper .text-content h3,
+    #banner-wrapper .text-content p {
       font-weight: lighter; }
     #banner-wrapper .text-content hr {
       border: none;
@@ -87,6 +88,6 @@
 @media screen and (max-width: 747px) {
   .item-padding {
     width: 50%; } }
-@media screen and (max-width: 369px) {
+@media screen and (max-width: 375px) {
   .item-padding {
     width: 100%; } }
