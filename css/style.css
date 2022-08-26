@@ -72,12 +72,82 @@
   #hot-nation .item-wrap .item-padding {
     float: left;
     padding: 5px;
+    color: white;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    overflow: hidden; }
+    #hot-nation .item-wrap .item-padding:hover .tag {
+      top: -40px; }
+    #hot-nation .item-wrap .item-padding:hover hgroup {
+      bottom: -60px;
+      z-index: 1; }
+    #hot-nation .item-wrap .item-padding:hover .mask {
+      opacity: 1; }
+    #hot-nation .item-wrap .item-padding .tag {
+      position: absolute;
+      top: 21px;
+      left: 21px;
+      padding: 0 5px;
+      background-color: #185197;
+      border-radius: 3px;
+      line-height: 23px; }
+    #hot-nation .item-wrap .item-padding hgroup {
+      position: absolute;
+      left: 21px;
+      right: 21px;
+      bottom: 6px;
+      font-size: 16px;
+      line-height: 27px; }
+    #hot-nation .item-wrap .item-padding .tag, #hot-nation .item-wrap .item-padding h5 {
+      font-size: 12px; }
   #hot-nation .item-wrap .item-img {
+    position: relative;
     border-radius: 15px;
     background: no-repeat center;
-    background-size: 100% 100%; }
+    background-size: 100% 100%;
+    overflow: hidden; }
+#hot-nation .mask {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-flow: column nowrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 95px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  opacity: 0; }
+  #hot-nation .mask h6 {
+    font-size: 16px; }
+  #hot-nation .mask p, #hot-nation .mask span {
+    text-align: center;
+    font-size: 12px; }
+  #hot-nation .mask p {
+    line-height: 20px; }
+  #hot-nation .mask span {
+    display: block;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    background-color: #185197; }
+  #hot-nation .mask hr {
+    margin: 22px 0 29px;
+    width: 47px;
+    border-top: 1px dashed;
+    border-bottom: transparent;
+    border-left: transparent;
+    border-right: transparent; }
+#hot-nation .opacity {
+  background-color: rgba(24, 81, 251, 0.3);
+  padding: 4px;
+  margin-top: 18px;
+  text-align: center;
+  border-radius: 30px; }
 
 @media screen and (min-width: 960px) {
   .item-padding {

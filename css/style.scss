@@ -125,20 +125,96 @@
 #hot-nation {
     .item-wrap {
         padding: 0 5px;
-
         .item-padding {
             float: left;
-            // width: 25%;
             padding: 5px;
+            color: white;
             -webkit-box-sizing: border-box;
             box-sizing: border-box;
+            overflow: hidden;
+            &:hover {
+                .tag {top: -40px;}
+                hgroup { bottom: -60px; z-index: 1;}
+                .mask { opacity: 1;}
+            }
+            .tag {
+                position: absolute;
+                top: 21px;
+                left: 21px;
+                padding: 0 5px;
+                background-color: #185197;
+                border-radius: 3px;
+                line-height: 23px;
+            }
+            hgroup {
+                position: absolute;
+                left: 21px;
+                right: 21px;
+                bottom: 6px;
+                font-size: 16px;
+                line-height: 27px;
+            }
+            .tag,h5 {
+                font-size: 12px;
+            }
         }
 
         .item-img {
+            position: relative;
             border-radius: 15px;
             background: no-repeat center;
             background-size: 100% 100%;
+            overflow: hidden;
         }
+    }
+    .mask {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        // flex-direction: column;
+        // flex-wrap: nowrap;
+        //简写
+        flex-flow: column nowrap;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0 95px;
+        background-color: rgba( 0,0,0, .5);
+        color: white;
+        opacity: 0;
+        h6 { font-size: 16px;}
+        p,span { 
+            text-align: center;
+            font-size: 12px;}
+        p {
+            line-height: 20px;
+        }
+        span {
+            display: block;
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 15px;
+            background-color: #185197;
+        }
+        hr {
+            margin: 22px 0 29px;
+            width: 47px;
+            border-top: 1px dashed;
+            border-bottom: transparent;
+            border-left: transparent;
+            border-right: transparent;
+        }
+    }
+    .opacity {
+        background-color: rgba(24, 81, 251, .3);
+        padding: 4px;
+        margin-top: 18px;
+        text-align: center;
+        border-radius: 30px;
     }
 }
 
