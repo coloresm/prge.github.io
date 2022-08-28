@@ -1,0 +1,18 @@
+// 引用配置@import文件 写法：@import "./sassconfigure.scss"
+// 使用@include 变量 写法：@include webkit(box-sizing,border-box)
+
+/*兼容模式*/
+@mixin webkit ($attr,$value) {
+    -webkit-#{$attr}: $value;
+    -moz-#{$attr}: $value;
+    -o-#{$attr}: $value;
+    -ms-#{$attr}: $value;
+    #{$attr}: $value;
+}
+
+/*透明度兼容*/
+@mixin opacity($value) {
+    opacity: $value;
+    /*兼容IE*/
+    filter: alpha( opacity = $value*100);
+}
