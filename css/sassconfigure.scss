@@ -13,6 +13,5 @@
 /*透明度兼容*/
 @mixin opacity($value) {
     opacity: $value;
-    /*兼容IE*/
-    filter: alpha( opacity = $value*100);
+    filter: alpha( opacity = $value*100);//兼容IE
 }
