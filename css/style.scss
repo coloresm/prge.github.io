@@ -218,6 +218,9 @@
         border-radius: 30px;
     }
 }
+/*给遮罩加效果*/
+.tag,hgroup { @include webkit (transition,all 1s ease 0s)}
+.mask { @include webkit ( transition, all 2s ease 0s) }
 /*适配移动端*/
 @media screen and(min-width: 960px) {
     .item-padding { width: 25%;}
