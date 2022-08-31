@@ -2,6 +2,8 @@
 /*引用sass配置文件*/
 /*兼容模式*/
 /*透明度兼容*/
+/*弹性布局宽度*/
+/*页面变灰色*/
 /*轮播*/
 #banner-wrapper {
   position: relative;
@@ -88,11 +90,13 @@
 /*热门国家目的地*/
 #hot-nation .item-wrap {
   padding: 0 5px;
+  display: flex;
+  flex-wrap: wrap;
 }
 #hot-nation .item-wrap .item-padding {
-  float: left;
   padding: 5px;
   color: white;
+  flex: 1;
   /*忽略边框*/
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -212,20 +216,28 @@
 @media screen and (min-width: 960px) {
   .item-padding {
     width: 25%;
+    max-width: 25%;
+    min-width: 25%;
   }
 }
 @media screen and (max-width: 960px) {
   .item-padding {
     width: 33.33333%;
+    max-width: 33.33333%;
+    min-width: 33.33333%;
   }
 }
 @media screen and (max-width: 747px) {
   .item-padding {
     width: 50%;
+    max-width: 50%;
+    min-width: 50%;
   }
 }
 @media screen and (max-width: 375px) {
   .item-padding {
     width: 100%;
+    max-width: 100%;
+    min-width: 100%;
   }
 }

@@ -15,3 +15,10 @@
     opacity: $value;
     filter: alpha( opacity = $value*100);//兼容IE
 }
+
+/*弹性布局宽度*/
+@mixin flex-scope($attr,$value){
+    #{$attr}: $value;
+    max-#{$attr}: $value;
+    min-#{$attr}: $value;
+}

@@ -1,5 +1,9 @@
 /*引用sass配置文件*/
 @import "./sassconfigure.scss";
+/*页面变灰色*/
+// body {
+//     @include webkit( filter,grayscale(100%))
+// }
 /*轮播*/
 #banner-wrapper {
     position: relative;
@@ -112,11 +116,13 @@
 #hot-nation {
     .item-wrap {
         padding: 0 5px;
-
+        display: flex;
+        flex-wrap: wrap;
         .item-padding {
-            float: left;
+            // float: left;
             padding: 5px;
             color: white;
+            flex: 1;
             /*忽略边框*/
             @include webkit(box-sizing,border-box);
             overflow: hidden;
@@ -224,17 +230,17 @@
 .mask { @include webkit ( transition, all 2s ease 0s) }
 /*适配移动端*/
 @media screen and(min-width: 960px) {
-    .item-padding { width: 25%;}
+    .item-padding { @include flex-scope(width,25%)}
 }
 
 @media screen and(max-width: 960px) {
-    .item-padding { width: 33.33333%;}
+    .item-padding { @include flex-scope(width,33.33333%)}
 }
 
 @media screen and(max-width: 747px) {
-    .item-padding { width: 50%;}
+    .item-padding { @include flex-scope(width,50%)}
 }
 
 @media screen and(max-width: 375px) {
-    .item-padding { width: 100%;}
+    .item-padding { @include flex-scope(width,100%)}
 }
