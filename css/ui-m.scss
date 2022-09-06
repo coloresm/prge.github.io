@@ -19,8 +19,8 @@
     background-size: cover;//解决图片比例问题，父元素比图片大导致无法撑满
     overflow: hidden;
     &:hover { 
-        .tag { top: -100px;}
-        hgroup { bottom: -100px;}
+        .tag { top: -300px;}
+        hgroup { bottom: -300px;}
         .mask { 
             @include opacity (1);
             background-color: rgba( 0,0,0, .5);
