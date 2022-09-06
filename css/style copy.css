@@ -1,0 +1,240 @@
+@charset "UTF-8";
+/*引用sass配置文件*/
+/*页面变灰色*/
+/*轮播*/
+#banner-wrapper {
+  position: relative;
+  /*方法二弹性布局底部TAB*/
+  /*方法一常规*/
+}
+#banner-wrapper .banner-tab {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+#banner-wrapper .banner-tab ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#banner-wrapper .banner-tab ul li {
+  width: 190px;
+  height: 50px;
+  line-height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #a4a4a4;
+  text-align: center;
+  font-size: 14px;
+  margin: 0 1px;
+  cursor: pointer;
+}
+#banner-wrapper .banner-tab ul li:hover {
+  background-color: rgba(24, 81, 251, 0.8);
+}
+#banner-wrapper .banner-tab ul li:first-child {
+  border-top-left-radius: 12px;
+}
+#banner-wrapper .banner-tab ul li:last-child {
+  border-top-right-radius: 12px;
+}
+#banner-wrapper .banner-list {
+  overflow: hidden;
+}
+#banner-wrapper .banner-slide-warp {
+  width: 5760px;
+  margin: auto;
+}
+#banner-wrapper .banner-slide-warp .item {
+  float: left;
+  position: relative;
+}
+#banner-wrapper .text-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 135px;
+  text-align: center;
+  color: white;
+}
+#banner-wrapper .text-content h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+#banner-wrapper .text-content h3 {
+  font-size: 24px;
+}
+#banner-wrapper .text-content p {
+  line-height: 24px;
+  font-size: 14px;
+}
+#banner-wrapper .text-content h3, #banner-wrapper .text-content p {
+  font-weight: lighter;
+}
+#banner-wrapper .text-content hr {
+  border: none;
+  width: 50px;
+  height: 1px;
+  background-color: white;
+  margin: 35px auto;
+}
+
+#header {
+  z-index: 1;
+}
+
+/*热门国家目的地*/
+.item-wrap {
+  padding: 0 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.item-wrap .item-padding {
+  color: white;
+  flex: 1;
+  /*忽略边框*/
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.item-wrap .item-padding:hover .tag {
+  top: -40px;
+}
+.item-wrap .item-padding:hover hgroup {
+  bottom: -60px;
+  z-index: 1;
+}
+.item-wrap .item-padding:hover .mask {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.item-wrap .item-padding .tag {
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  padding: 0 5px;
+  background-color: #185197;
+  border-radius: 3px;
+  line-height: 23px;
+}
+.item-wrap .item-padding hgroup {
+  position: absolute;
+  left: 21px;
+  right: 21px;
+  bottom: 6px;
+  font-size: 16px;
+  line-height: 27px;
+}
+.item-wrap .item-padding .tag, .item-wrap .item-padding h5 {
+  font-size: 12px;
+}
+.item-wrap .item-img {
+  position: relative;
+  border-radius: 15px;
+  background: no-repeat center;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+
+.mask {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-flow: column nowrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 95px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.mask h6 {
+  font-size: 16px;
+}
+.mask p, .mask span {
+  text-align: center;
+  font-size: 12px;
+}
+.mask p {
+  line-height: 20px;
+}
+.mask span {
+  display: block;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  background-color: #185197;
+}
+.mask hr {
+  margin: 22px 0 29px;
+  width: 47px;
+  border-top: 1px dashed;
+  border-bottom: transparent;
+  border-left: transparent;
+  border-right: transparent;
+}
+.mask .opacity {
+  background-color: rgba(24, 81, 251, 0.3);
+  padding: 4px;
+  margin-top: 18px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+/*给遮罩加效果*/
+.tag, hgroup {
+  -webkit-transition: all 1s ease 0s;
+  -moz-transition: all 1s ease 0s;
+  -o-transition: all 1s ease 0s;
+  -ms-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+}
+
+.mask {
+  -webkit-transition: all 2s ease 0s;
+  -moz-transition: all 2s ease 0s;
+  -o-transition: all 2s ease 0s;
+  -ms-transition: all 2s ease 0s;
+  transition: all 2s ease 0s;
+}
+
+/*适配移动端*/
+@media screen and (max-width: 768px) {
+  .item-padding {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .item-padding {
+    width: 50%;
+    max-width: 50%;
+    min-width: 50%;
+  }
+}
+@media screen and (min-width: 996px) {
+  .item-padding {
+    width: 33.33333%;
+    max-width: 33.33333%;
+    min-width: 33.33333%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .item-padding {
+    width: 25%;
+    max-width: 25%;
+    min-width: 25%;
+  }
+}

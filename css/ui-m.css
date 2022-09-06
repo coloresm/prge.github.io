@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/*栅栏布局*/
+.col-wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.col-item {
+  flex: 1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*通过背景决绝图片不一样大错位*/
+.col-img {
+  position: relative;
+  background: no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+}
+.col-img:hover .tag {
+  top: -100px;
+}
+.col-img:hover hgroup {
+  bottom: -100px;
+}
+.col-img:hover .mask {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.col-img img {
+  width: 100%;
+}
+
+/*添加过度效果*/
+.tag, hgroup, .mask {
+  -webkit-transition: all 2s ease 0s;
+  -moz-transition: all 2s ease 0s;
+  -o-transition: all 2s ease 0s;
+  -ms-transition: all 2s ease 0s;
+  transition: all 2s ease 0s;
+}
+
+.col-content {
+  font-size: 12px;
+  color: white;
+}
+.col-content .tag {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #185197;
+}
+.col-content hgroup {
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+}
+.col-content hgroup h4 {
+  font-size: 16px;
+  line-height: 27px;
+}
+.col-content hgroup h5 {
+  line-height: 20px;
+}
+
+.col-radius-15 {
+  border-radius: 15px;
+}
+
+.col-padding-5 {
+  padding: 5px;
+}
+
+/*遮罩层*/
+.mask {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 21px;
+  color: white;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.mask hr {
+  width: 47px;
+  margin: 22px 0 29px;
+  border: none;
+  border-top: 1px dashed white;
+}
+.mask h6 {
+  font-size: 16px;
+}
+.mask p {
+  line-height: 20px;
+}
+.mask .more {
+  display: block;
+  padding: 9px 30px;
+  margin-top: 19px;
+  background-color: #185197;
+  border-radius: 100px;
+  outline: 5px solid rgba(24, 81, 151, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+  .col-xs {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .col-sm {
+    width: 50%;
+    max-width: 50%;
+    min-width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .col-md {
+    width: 33.33333%;
+    max-width: 33.33333%;
+    min-width: 33.33333%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .col-lg {
+    width: 25%;
+    max-width: 25%;
+    min-width: 25%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .col-xl {
+    width: 20%;
+    max-width: 20%;
+    min-width: 20%;
+  }
+}

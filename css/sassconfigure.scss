@@ -1,7 +1,7 @@
 // 引用配置@import文件 写法：@import "./sassconfigure.scss"
 // 使用@include 变量 写法：@include webkit(box-sizing,border-box)
 
-/*兼容模式*/
+//兼容模式
 @mixin webkit ($attr,$value) {
     -webkit-#{$attr}: $value;
     -moz-#{$attr}: $value;
@@ -10,13 +10,13 @@
     #{$attr}: $value;
 }
 
-/*透明度兼容*/
+//透明度兼容
 @mixin opacity($value) {
     opacity: $value;
     filter: alpha( opacity = $value*100);//兼容IE
 }
 
-/*弹性布局宽度*/
+//弹性布局宽度
 @mixin flex-scope($attr,$value){
     #{$attr}: $value;
     max-#{$attr}: $value;
