@@ -123,6 +123,9 @@
     max-width: 100%;
     min-width: 100%;
   }
+  .container {
+    width: auto;
+  }
 }
 @media screen and (min-width: 768px) {
   .col-sm {
@@ -130,12 +133,18 @@
     max-width: 50%;
     min-width: 50%;
   }
+  .container {
+    width: auto;
+  }
 }
 @media screen and (min-width: 992px) {
   .col-md {
     width: 33.33333%;
     max-width: 33.33333%;
     min-width: 33.33333%;
+  }
+  .container {
+    width: auto;
   }
 }
 @media screen and (min-width: 1200px) {
