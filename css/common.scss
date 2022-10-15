@@ -153,10 +153,3 @@
 .header-search form button , .header-search form select, .header-search form select option {
     cursor: pointer;
 }
-/*清浮动*/
-.clearfix::after {
-    content: "";
-    display: block;
-    height: 0;
-    clear: both;
-}

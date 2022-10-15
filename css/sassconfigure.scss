@@ -18,7 +18,8 @@
 
 //弹性布局宽度
 @mixin flex-scope($attr,$value){
-    #{$attr}: $value;
+    // #{$attr}: $value;
+    flex: 0 0 $value;
     max-#{$attr}: $value;
-    min-#{$attr}: $value;
+    // min-#{$attr}: $value;
 }

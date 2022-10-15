@@ -117,11 +117,14 @@
   outline: 5px solid rgba(24, 81, 151, 0.5);
 }
 
+.col-margin-5 {
+  margin: 0 -5px;
+}
+
 @media screen and (max-width: 768px) {
   .col-xs {
-    width: 100%;
+    flex: 0 0 100%;
     max-width: 100%;
-    min-width: 100%;
   }
   .container {
     width: auto;
@@ -129,9 +132,8 @@
 }
 @media screen and (min-width: 768px) {
   .col-sm {
-    width: 50%;
+    flex: 0 0 50%;
     max-width: 50%;
-    min-width: 50%;
   }
   .container {
     width: auto;
@@ -139,7 +141,7 @@
 }
 @media screen and (min-width: 992px) {
   .col-md {
-    width: 33.33333%;
+    flex: 0 0 33.33333%;
     max-width: 33.33333%;
   }
   .container {
@@ -148,9 +150,8 @@
 }
 @media screen and (min-width: 1200px) {
   .col-lg {
-    width: 25%;
+    flex: 0 0 25%;
     max-width: 25%;
-    min-width: 25%;
   }
   .container {
     width: 1200px;
@@ -158,9 +159,8 @@
 }
 @media screen and (min-width: 1920px) {
   .col-xl {
-    width: 20%;
+    flex: 0 0 20%;
     max-width: 20%;
-    min-width: 20%;
   }
   .container {
     width: 1200px;

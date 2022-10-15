@@ -100,6 +100,9 @@
         outline: 5px solid rgba(24,81,151, .5);
     }
 }
+.col-margin-5 {
+    margin: 0 -5px;
+}
 //适配说明尺寸
 //xs:<768px sm:≥768px md:≥992px lg:≥1200px xl:≥1920
 
@@ -108,7 +111,7 @@
     .container { width: auto;}
 }
 @media screen and(min-width: 768px){
-    .col-sm { @include flex-scope( width,50%)}
+    .col-sm { @include flex-scope( width,50%);}
     .container { width: auto;}
 }
 @media screen and( min-width: 992px){
